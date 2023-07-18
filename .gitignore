@@ -3,3 +3,7 @@ vendor/
 zipped-theme/
 *.DS_Store
 *.Thumbs.db
+
+css/
+img/
+js/

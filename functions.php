@@ -37,3 +37,11 @@ $testsSetup = new TestsSetup;
 $usersSetup = new UsersSetup;
 
 $translationSetup = new TranslationSetup;
+
+// function get_path($resource) {
+//     $resource_file = 'classes/' . $resource . '.php';
+//     if (file_exists($resource_file)) {
+//         require_once($resource_file); 
+//         return new $class();
+//     }
+// }

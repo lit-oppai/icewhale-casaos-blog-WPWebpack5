@@ -1,0 +1,441 @@
+// article card
+section {
+    .headline {
+      .operation:hover {
+        background: hsla(0, 0%, 10%, 1);
+      }
+    }
+  
+    .card {
+      width: 288px;
+      height: 300px;
+      background: hsla(0, 0%, 100%, 1);
+      overflow: hidden;
+  
+      &:hover {
+        outline: 1px solid #F1B335
+      }
+  
+      img {
+        transition: transform .5s;
+  
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+  
+      img.tipoc {
+        width: 288px;
+        height: 164px;
+      }
+  
+      .copywriters {
+        height: 138px;
+  
+        .pre_title {
+          /* Reviews */
+          font-family: 'Rajdhani SemiBold';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 18px;
+          /* identical to box height, or 129% */
+          text-transform: uppercase;
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  
+          /* 主色 */
+          color: #F1B335;
+        }
+  
+        .title {
+          /* LattePanda Review: Alternative Of Raspberry Pi */
+          font-family: 'Rajdhani';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 26px;
+          /* or 130% */
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  
+          color: #1A1A1A;
+        }
+  
+        .author {
+          /* ZimaBoard - 01/06/2023 */
+          font-family: 'Mulish';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+          /* identical to box height, or 129% */
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  
+          color: #1A1A1A;
+        }
+      }
+    }
+  
+    @media (min-width: 377px) {
+      .headline {
+        .title {
+          /* Reviews */
+          font-family: 'Rajdhani';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 28px;
+          line-height: 32px;
+          /* identical to box height, or 114% */
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  
+          color: #1A1A1A;
+  
+          .badge {
+            /* Total 7 articles */
+            font-family: 'Rajdhani';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+            /* identical to box height, or 133% */
+            font-feature-settings: 'pnum' on, 'lnum' on;
+  
+            color: #1A1A1A;
+          }
+        }
+  
+        .operation {
+          /* Rectangle 3468524 */
+          height: 40px;
+          width: 106px;
+          box-sizing: border-box;
+          border: 1px solid #1A1A1A;
+  
+          /* View All */
+          font-family: 'Rajdhani';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 24px;
+          /* identical to box height, or 133% */
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  
+          /* 主色 */
+          color: #F1B335;
+        }
+      }
+    }
+    @media (max-width: 376px) {
+      .headline {
+        .title {
+          /* Media Servers */
+          font-family: 'Rajdhani';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 30px;
+          /* identical to box height, or 125% */
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  
+          color: #1A1A1A;
+  
+          .badge {
+            /* Total 10 articles */
+            font-family: 'Rajdhani';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            /* identical to box height, or 129% */
+            font-feature-settings: 'pnum' on, 'lnum' on;
+  
+            color: #1A1A1A;
+          }
+        }
+  
+        .operation {
+          /* Rectangle 3468524 */
+          height: 30px;
+          width: 70px;
+          box-sizing: border-box;
+          border: 1px solid #1A1A1A;
+  
+          /* View All */
+          font-family: 'Rajdhani';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16px;
+          /* identical to box height, or 133% */
+          font-feature-settings: 'pnum' on, 'lnum' on;
+  
+          /* 主色 */
+          color: #F1B335;
+        }
+      }
+  
+      .card {
+        width: 327px;
+        height: 322px;
+  
+        img.tipoc {
+          width: 327px;
+          height: 184px;
+        }
+  
+        &:not(:first-child) {
+          display: none;
+        }
+      }
+    }
+  }
+  
+  // main text
+  .article {
+    padding: 3rem;
+    width: 48.5rem;
+    background: #FFFFFF;
+  
+    title.title {
+      display: block;
+      // 标题内容常规间距 16px
+      margin-bottom: 1rem;
+    }
+  
+    .text {
+      margin-bottom: 40px;
+  
+      .text {
+        margin: 2rem 0;
+      }
+    }
+  
+    .img {
+      margin: 2rem 0;
+      width: 100%;
+      height: auto;
+    }
+  
+    .navigation-part {
+      margin: 40px 0;
+      display: flex;
+      flex-direction: column;
+  
+  
+      .navigation-item {
+        /* Part 1. What is ZimaBoard and its features? */
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        /* identical to box height, or 130% */
+        font-feature-settings: 'pnum' on, 'lnum' on;
+  
+        /* 链接色 */
+        color: #006CD9;
+      }
+  
+      .navigation-item:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  
+    .option {
+      li {
+        list-style-type: disc;
+        line-height: 26px;
+      }
+  
+      li:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
+  
+  }
+  
+  @media (min-width: 377px) {
+    .reviews {
+      /* Reviews */
+      font-family: 'Rajdhani SemiBold';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      /* identical to box height, or 133% */
+      text-transform: capitalize;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+  
+      color: #1A1A1A;
+    }
+  
+    title.title {
+      &.h1 {
+        margin: 1rem 0;
+        /* ZimaBoard – Kodi Media Server: Stream Your Favorite Content Hassle-Free */
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        /* or 120% */
+        font-feature-settings: 'pnum' on, 'lnum' on;
+  
+        color: #1A1A1A;
+      }
+  
+      &.h2 {
+        /* Part 1. What is ZimaBoard and its features? */
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        /* identical to box height, or 125% */
+        font-feature-settings: 'pnum' on, 'lnum' on;
+  
+        color: #1A1A1A;
+      }
+  
+      &.h3 {
+        /* 2. Configuring ZimaBoard for optimal streaming experience */
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        /* or 114% */
+        font-feature-settings: 'pnum' on, 'lnum' on;
+  
+        color: #1A1A1A;
+      }
+  
+      &.h4 {
+        /* Network settings and connectivity */
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        /* identical to box height, or 125% */
+        font-feature-settings: 'pnum' on, 'lnum' on;
+  
+        color: #1A1A1A;
+      }
+    }
+  
+    .text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      /* or 162% */
+      text-transform: capitalize;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+  
+      color: #1A1A1A;
+    }
+  }
+  
+  @media (max-width: 376px) {
+    .article {
+      padding: 2rem 1.5rem 4rem;
+      margin-top: 15rem;
+    }
+  
+    .reviews {
+      /* Reviews */
+      font-family: 'Rajdhani SemiBold';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      /* identical to box height, or 129% */
+      text-transform: capitalize;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+  
+      color: #1A1A1A;
+    }
+  
+    title.title {
+      &.h1 {
+        /* ZimaBoard – Kodi Media Server: Stream Your Favorite Content Hassle-Free */
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 40px;
+        /* or 125% */
+        font-feature-settings: 'pnum' on, 'lnum' on;
+  
+        color: #1A1A1A;
+      }
+  
+      &.h2 {
+        /* Part 1. What is ZimaBoard and its features? */
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        /* or 114% */
+        font-feature-settings: 'pnum' on, 'lnum' on;
+  
+        color: #1A1A1A;
+      }
+  
+      &.h3 {
+        /* 1. Installing ZimaBoard operating system for seamless performance */
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        /* or 125% */
+        font-feature-settings: 'pnum' on, 'lnum' on;
+  
+        color: #1A1A1A;
+      }
+  
+      &.h4 {
+        /* Final Verdict: */
+        font-family: 'Rajdhani';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        /* identical to box height, or 125% */
+        font-feature-settings: 'pnum' on, 'lnum' on;
+  
+        color: #1A1A1A;
+      }
+    }
+  
+    .text {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      /* or 162% */
+      text-transform: capitalize;
+      font-feature-settings: 'pnum' on, 'lnum' on;
+  
+      color: #1A1A1A;
+    }
+  }
+  
+  // background img
+  .background {
+    background-color: #FAFAFA !important;
+    background: url(../images/article/1.jpg) no-repeat;
+    background-size: 100% 480px;
+    background-position: center top;
+  }
+  
+  @media (max-width: 376px) {
+    .background {
+      background-size: auto 240px;
+    }
+  }
+  

@@ -74,7 +74,7 @@ const common = {
   module: {
     rules: [
       {
-        test: /\.scss$/,
+        test: /(\.scss|\.css)$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader
@@ -111,7 +111,7 @@ const common = {
   plugins: [
     new CopyPlugin({
       patterns: [{
-        from: '*.*',
+        from: '**',
         to: '../img',
         context: './src/img/'
       }]
@@ -119,16 +119,75 @@ const common = {
   ]
 }
 
-const preloader = merge(common, {
-  entry: './src/js/preloader.js',
+// const preloader = merge(common, {
+//   entry: './src/js/preloader.js',
+//   output: {
+//     path: path.resolve(__dirname, '../js'),
+//     filename: 'preloader.min.js',
+//     publicPath: '../'
+//   },
+//   plugins: [
+//     new MiniCssExtractPlugin({
+//       filename: '../css/preloader.min.css'
+//     }),
+//     new RemoveFilesPlugin({
+//       before: {
+//         include: [
+//           './css',
+//           './img',
+//           './js'
+//         ]
+//       },
+//       after: {
+//         root: './js',
+//         include: [
+//           'preloader.min.js'
+//         ]
+//       }
+//     })
+//   ]
+// })
+
+// const wpLogin = merge(common, {
+//   entry: './src/js/wp-login.js',
+//   output: {
+//     path: path.resolve(__dirname, '../js'),
+//     filename: 'wp-login.min.js',
+//     publicPath: '../'
+//   },
+//   plugins: [
+//     new MiniCssExtractPlugin({
+//       filename: '../css/wp-login.min.css'
+//     })
+//   ]
+// })
+
+// const main = merge(common, {
+//   entry: './src/js/main.js',
+//   output: {
+//     path: path.resolve(__dirname, '../js'),
+//     filename: 'main.min.js',
+//     publicPath: '../'
+//   },
+//   plugins: [
+//     new MiniCssExtractPlugin({
+//       filename: '../css/main.min.css'
+//     })
+//   ]
+// })
+
+// module.exports = [preloader, wpLogin, main]
+
+const index = merge(common, {
+  entry: './src/js/index.js',
   output: {
     path: path.resolve(__dirname, '../js'),
-    filename: 'preloader.min.js',
+    filename: 'index.min.js',
     publicPath: '../'
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '../css/preloader.min.css'
+      filename: '../css/main.min.css'
     }),
     new RemoveFilesPlugin({
       before: {
@@ -141,26 +200,26 @@ const preloader = merge(common, {
       after: {
         root: './js',
         include: [
-          'preloader.min.js'
+          'index.min.js'
         ]
       }
     })
   ]
 })
 
-const wpLogin = merge(common, {
-  entry: './src/js/wp-login.js',
-  output: {
-    path: path.resolve(__dirname, '../js'),
-    filename: 'wp-login.min.js',
-    publicPath: '../'
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '../css/wp-login.min.css'
-    })
-  ]
-})
+// const wpLogin = merge(common, {
+//   entry: './src/js/wp-login.js',
+//   output: {
+//     path: path.resolve(__dirname, '../js'),
+//     filename: 'wp-login.min.js',
+//     publicPath: '../'
+//   },
+//   plugins: [
+//     new MiniCssExtractPlugin({
+//       filename: '../css/wp-login.min.css'
+//     })
+//   ]
+// })
 
 const main = merge(common, {
   entry: './src/js/main.js',
@@ -176,4 +235,4 @@ const main = merge(common, {
   ]
 })
 
-module.exports = [preloader, wpLogin, main]
+module.exports = [index, main]

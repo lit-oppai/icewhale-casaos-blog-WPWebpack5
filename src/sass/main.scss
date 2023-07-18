@@ -1,5 +1,25 @@
 @import "fonts";
 @import "normalizer";
 @import "base";
-@import "header";
+// @import "header";
 @import "tailwindcss/base";
+
+@import "c_header.scss";
+@import "c_layout.scss";
+@import "c_article.scss";
+
+
+.main {
+    width: $content-width;
+    height: auto;
+    margin-top: 3rem;
+  }
+  
+  @media (max-width: 376px) {
+    .main {
+      margin-top: 2rem;
+      width: $mobile-content-width;
+      height: auto;
+    }
+  }
+  
