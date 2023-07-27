@@ -84,18 +84,23 @@
 
 
 @font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter.ttf');
+  }
+  
+  @font-face {
     font-family: 'Rajdhani';
     src: url("../fonts/Rajdhani/Rajdhani-Bold.ttf");
-    //src: url("./fonts/Rajdhani/Rajdhani-SemiBold.ttf");
+    //src: url("../fonts/Rajdhani/Rajdhani-SemiBold.ttf");
     src: url("../fonts/Rajdhani/Rajdhani-Medium.ttf");
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: 'Rajdhani SemiBold';
     src: url("../fonts/Rajdhani/Rajdhani-SemiBold.ttf");
-}
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: 'Mulish';
     src: url("../fonts/Mulish/static/Mulish-Regular.ttf");
-}
+  }

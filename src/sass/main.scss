@@ -10,16 +10,24 @@
 
 
 .main {
-    width: $content-width;
+  max-width: $content-width;
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+  padding: 0 2rem;
+  //display: grid;
+  //section {
+  //  display: grid;
+  //}
+}
+
+@media (max-width: 376px) {
+  .main {
+    margin-top: 2rem;
+    width: $mobile-content-width;
     height: auto;
-    margin-top: 3rem;
+    padding: 0;
   }
-  
-  @media (max-width: 376px) {
-    .main {
-      margin-top: 2rem;
-      width: $mobile-content-width;
-      height: auto;
-    }
-  }
+}
+
   
