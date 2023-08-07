@@ -50,24 +50,37 @@
                 <div id="recent_posts_entry-2" class="col-lg-3 col-md-6 col-sm-12 widget_recent_posts_entry dronza-widget">
                     <div class="widget footer-widget">
                         <div class="recent-posts-entry">
+                            <?php
+                            $args = array(
+                                'post_type' => 'post',
+                                'posts_per_page' => 2,
+                                'order' => 'DESC'
+                            );
+                            $the_query = new WP_Query($args);
+                            ?>
                             <h4 class="widget-title">Recent Post</h4>
                             <div class="section-content">
                                 <div class="widget-post-bx">
+                                    <?php while ( $the_query->have_posts() ) : $the_query->the_post();  ?>  
+
                                     <div class="widget-post clearfix">
                                         <div class="wt-post-media">
                                         </div>
                                         <div class="wt-post-info">
                                             <div class="wt-post-meta">
                                                 <ul>
-                                                    <li class="post-author">12 July</li>
+                                                    <li class="post-author"><?php the_time( 'j F' ); ?></li>
                                                 </ul>
                                             </div>
                                             <div class="wt-post-header">
-                                                <a href="https://www.zimaboard.com/blog/building-a-super-cluster-with-zimaboard.html" class="post-title">Building a Super Cluster with ZimaBoard: An Interview with a ZimaBoard Geek</a>
+                                                <a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="widget-post clearfix">
+
+                                    <?php endwhile; ?>  
+
+                                    <!-- <div class="widget-post clearfix">
                                         <div class="wt-post-media">
                                         </div>
                                         <div class="wt-post-info">
@@ -80,11 +93,12 @@
                                                 <a href="https://www.zimaboard.com/blog/casaos-successful-case-story-simplifies-docker-for-a-seamless-experience.html" class="post-title">CasaOS Successful Case Story-Simplifies Docker for a Seamless Experience</a>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <?php wp_reset_postdata(); ?>
                 </div>
                 <div id="custom_html-2" class="widget_text col-lg-3 col-md-6 col-sm-12 widget_custom_html dronza-widget">
                     <div class="widget_text widget footer-widget">
