@@ -98,22 +98,7 @@ const preloader = merge(common, {
   ]
 })
 
-const wpLogin = merge(common, {
-  entry: './src/js/wp-login.js',
-  output: {
-    path: path.resolve(__dirname, '../js'),
-    filename: 'wp-login.min.js',
-    publicPath: '../'
-  },
-  devtool: 'source-map',
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '../css/wp-login.min.css'
-    })
-  ]
-})
-
-const main = merge(common, {
+const header = merge(common, {
   devServer: {
     port: 9000,
     static: {
@@ -128,6 +113,35 @@ const main = merge(common, {
     },
     liveReload: true
   },
+  entry: './src/js/header.js',
+  output: {
+    path: path.resolve(__dirname, '../js'),
+    filename: 'header.min.js',
+    publicPath: '../'
+  },
+  devtool: 'source-map',
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '../css/header.min.css'
+    })
+  ]
+})
+
+const main = merge(common, {
+  // devServer: {
+  //   port: 9000,
+  //   static: {
+  //     directory: path.resolve(__dirname, '../')
+  //   },
+  //   devMiddleware: {
+  //     index: LocalhostFolder + '/',
+  //     writeToDisk: true
+  //   },
+  //   client: {
+  //     overlay: true
+  //   },
+  //   liveReload: true
+  // },
   entry: './src/js/main.js',
   output: {
     path: path.resolve(__dirname, '../js'),
@@ -142,4 +156,4 @@ const main = merge(common, {
   ]
 })
 
-module.exports = [preloader, wpLogin, main]
+module.exports = [preloader, header, main]

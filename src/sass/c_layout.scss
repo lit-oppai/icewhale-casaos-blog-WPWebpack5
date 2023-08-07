@@ -1,5 +1,19 @@
 body {
   height: 100%;
+  overflow: none;
+
+  .layout-container {
+    // display: grid;
+    // grid-template-columns: 1fr 100% 284px;
+    // display: flex;
+    // align-items: center;
+  }
+}
+
+@media (max-width: 1440px) {
+  aside {
+    display: none;
+  }
 }
 
 .body {
@@ -19,13 +33,15 @@ body {
     .content-ref {
       margin-bottom: 16px;
 
-      font-family: 'Rajdhani SemiBold';
+      font-family: "Rajdhani SemiBold";
       font-style: normal;
       font-weight: 600;
       font-size: 18px;
       line-height: 24px;
       /* identical to box height, or 133% */
-      font-feature-settings: 'pnum' on, 'lnum' on;
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
 
       color: rgba(26, 26, 26, 0.2);
 
@@ -38,96 +54,18 @@ body {
           display: flex;
         }
 
-        font-family: 'Rajdhani';
+        font-family: "Rajdhani";
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
         line-height: 26px;
         /* identical to box height, or 130% */
-        font-feature-settings: 'pnum' on, 'lnum' on;
+        font-feature-settings:
+          "pnum" on,
+          "lnum" on;
 
-        color: #1A1A1A;
+        color: #1a1a1a;
       }
-    }
-  }
-
-  aside.right {
-    position: fixed;
-    right: 1.5rem;
-    top: 32rem;
-    width: 17.75rem;
-    background: #FFFFFF;
-    padding: 1.5rem;
-
-    .title {
-      /* Share This Article */
-      font-family: 'Rajdhani';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 26px;
-      /* identical to box height, or 130% */
-      text-transform: capitalize;
-      font-feature-settings: 'pnum' on, 'lnum' on;
-
-      color: #1A1A1A;
-    }
-
-    .icon {
-      background-color: #2E2E2E;
-
-      &:not(:last-child) {
-        margin-right: 0.69rem;
-      }
-
-      &:hover {
-        cursor: pointer;
-        background-color: #F1B335;
-      }
-    }
-
-    .topic {
-      margin-bottom: 8px;
-      /* Odyssey X86J4125 vs ZimaBoard: Which Mini PC Reigns Supreme? */
-      font-family: 'Mulish';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 24px;
-      /* or 133% */
-      text-transform: capitalize;
-      font-feature-settings: 'pnum' on, 'lnum' on;
-
-      color: #1A1A1A;
-
-      &:hover {
-        text-decoration-line: underline;
-      }
-
-      .date {
-        /* 06/16/2023 */
-        font-family: 'Mulish';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 24px;
-        /* identical to box height, or 171% */
-        text-transform: capitalize;
-        font-feature-settings: 'pnum' on, 'lnum' on;
-        text-decoration-line: none;
-
-        color: #666666;
-      }
-
-      &:not(:last-child) {
-        margin-bottom: 16px;
-      }
-    }
-  }
-
-  @media (max-width: 1440px) {
-    aside {
-      display: none;
     }
   }
 
@@ -140,11 +78,11 @@ body {
     padding: 1rem;
 
     .bgImgSrc1 {
-      background-image: url("../img/AD_blocker/1.png");
+      background-image: url("../img/AD_blocker/1.webp");
     }
 
     .bgImgSrc2 {
-      background-image: url("../img/AD_blocker/2.png");
+      background-image: url("../img/AD_blocker/2.webp");
     }
 
     .bgImg {
@@ -155,7 +93,7 @@ body {
       height: 568px;
       object-fit: cover;
       padding: 2.5rem;
-      transition: background .5s;
+      transition: background 0.5s;
 
       &:hover {
         background-size: auto 110%;
@@ -163,48 +101,55 @@ body {
 
       .article_tag {
         /* Personal NAS */
-        font-family: 'Rajdhani SemiBold';
+        font-family: "Rajdhani SemiBold";
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
         line-height: 18px;
         /* identical to box height, or 129% */
         text-transform: uppercase;
-        font-feature-settings: 'pnum' on, 'lnum' on;
+        font-feature-settings:
+          "pnum" on,
+          "lnum" on;
 
         /* 主色 */
-        color: #F1B335;
+        color: #f1b335;
       }
 
       .article_title {
         /* How to Block Ads on Instagram with ZimaBoard Single Board Server */
-        font-family: 'Rajdhani';
+        font-family: "Rajdhani";
         font-style: normal;
         font-weight: 700;
         font-size: 32px;
         line-height: 40px;
         /* or 125% */
-        font-feature-settings: 'pnum' on, 'lnum' on;
+        font-feature-settings:
+          "pnum" on,
+          "lnum" on;
 
         /* Basic/White */
-        color: #FFFFFF;
+        color: #ffffff;
+        text-decoration: none;
       }
 
       .article_info {
         /* ZimaBoard - 01/06/2023 */
-        font-family: 'Mulish';
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;
         /* identical to box height, or 129% */
-        font-feature-settings: 'pnum' on, 'lnum' on;
+        font-feature-settings:
+          "pnum" on,
+          "lnum" on;
 
-        color: #FFFFFF;
+        color: #ffffff;
       }
     }
 
-    @media (max-width: 376px) {
+    @media (max-width: 481px) {
       .bgImg:not(:first-child) {
         display: none;
       }
@@ -225,13 +170,14 @@ body {
       //width: 896px;
       max-width: 56rem;
       width: 100%;
+      overflow-y: visible;
 
       .swiper-wrapper {
         height: 100%;
       }
     }
 
-    @media (max-width: 376px) {
+    @media (max-width: 481px) {
       .swiper {
         height: 184px;
         width: $mobile-content-width;
@@ -239,8 +185,9 @@ body {
       }
     }
 
-    .swiper-button-next, .swiper-button-prev {
-      border: 1px solid #1A1A1A;
+    .swiper-button-next,
+    .swiper-button-prev {
+      border: 1px solid #1a1a1a;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -256,7 +203,7 @@ body {
         width: 20px;
         height: 3px;
         background: hsla(0, 0%, 100%, 1);
-        opacity: .4;
+        opacity: 0.4;
       }
 
       .swiper-pagination-bullet-active {
@@ -264,7 +211,7 @@ body {
       }
     }
 
-    @media (max-width: 376px) {
+    @media (max-width: 481px) {
       //--swiper-pagination-bottom: 0;
       .swiper-pagination {
         //--swiper-pagination-bottom: -10px;
@@ -277,25 +224,25 @@ body {
     }
 
     .bgImgSrc1 {
-      background-image: url("../img/latest_news/1.png");
+      background-image: url("../img/latest_news/1.webp");
     }
 
     .bgImgSrc2 {
-      background-image: url("../img/latest_news/1.png");
+      background-image: url("../img/latest_news/1.webp");
     }
 
     .bgImg {
       //background-size: cover;
       background-size: auto 100%;
       background-position: center;
-      //height: 100%;
+      // height: 100%;
       height: 504px;
       //height: auto;
       //transform: scale(1);
       //width: auto;
       width: 100%;
       object-fit: cover;
-      transition: background .5s;
+      transition: background 0.5s;
 
       &:hover {
         background-size: auto 110%;
@@ -311,77 +258,183 @@ body {
 
       .article_tag {
         /* Latest News */
-        font-family: 'Rajdhani SemiBold';
+        font-family: "Rajdhani SemiBold";
         font-style: normal;
         font-weight: 600;
         font-size: 14px;
         line-height: 18px;
         /* identical to box height, or 129% */
         text-transform: uppercase;
-        font-feature-settings: 'pnum' on, 'lnum' on;
+        font-feature-settings:
+          "pnum" on,
+          "lnum" on;
 
         /* Basic/White */
-        color: #FFFFFF;
+        color: #ffffff;
       }
 
-      @media (min-width: 377px) {
+      @media (min-width: 482px) {
         .article_title {
           /* ZimaBoard Prime Discount Day -14th Of Each Month */
-          font-family: 'Rajdhani';
+          font-family: "Rajdhani";
           font-style: normal;
           font-weight: 700;
           font-size: 28px;
           line-height: 32px;
           /* identical to box height, or 114% */
-          font-feature-settings: 'pnum' on, 'lnum' on;
+          font-feature-settings:
+            "pnum" on,
+            "lnum" on;
 
           /* Basic/White */
-          color: #FFFFFF;
+          color: #ffffff;
         }
       }
 
       .article_info {
         /* ZimaBoard - 06/06/2023 */
-        font-family: 'Mulish';
+        font-family: "Mulish";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 18px;
         /* identical to box height, or 129% */
-        font-feature-settings: 'pnum' on, 'lnum' on;
+        font-feature-settings:
+          "pnum" on,
+          "lnum" on;
 
         /* Basic/White */
-        color: #FFFFFF;
+        color: #ffffff;
       }
     }
 
-    @media (max-width: 376px) {
+    @media (max-width: 481px) {
+      .bgImg{
+        height: 184px;
+      }
+
       .bgMask {
         padding: 1rem;
       }
 
       .article_title {
         /* ZimaBoard Prime Discount Day -14th Of Each Month */
-        font-family: 'Rajdhani';
+        font-family: "Rajdhani";
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
         line-height: 26px;
         /* or 130% */
-        font-feature-settings: 'pnum' on, 'lnum' on;
+        font-feature-settings:
+          "pnum" on,
+          "lnum" on;
 
         /* Basic/White */
-        color: #FFFFFF;
+        color: #ffffff;
+        text-decoration: none;
       }
     }
   }
 }
 
-footer {
-  width: 100%;
-  height: 448px;
-  background: #101010;
-  @media (max-width: 376px) {
-    height: 412px;
+// footer {
+//   width: 100%;
+//   height: 448px;
+//   background: #101010;
+//   @media (max-width: 481px) {
+//     height: 412px;
+//   }
+// }
+
+aside.right {
+  // margin-left: auto;
+  position: absolute;
+  right: 0;
+  // top: 5.25rem;
+  top: 32rem;
+  width: 17.75rem;
+  background: #ffffff;
+  // margin-top: 32rem;
+  padding: 1.5rem;
+  .sticky {
+    // position: sticky;
+
+    // top: 5.25rem;
+    // width: 17.75rem;
+    // background: #ffffff;
+    // margin-top: 32rem;
+    // padding: 1.5rem;
+
+    .title {
+      /* Share This Article */
+      font-family: "Rajdhani";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+      /* identical to box height, or 130% */
+      text-transform: capitalize;
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
+
+      color: #1a1a1a;
+    }
+
+    a {
+      &:not(:last-child) {
+        margin-right: 0.69rem;
+      }
+      .icon {
+        background-color: #2e2e2e;
+
+        &:hover {
+          cursor: pointer;
+          background-color: #f1b335;
+        }
+      }
+    }
+
+    .topic {
+      margin-bottom: 8px;
+      /* Odyssey X86J4125 vs ZimaBoard: Which Mini PC Reigns Supreme? */
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      /* or 133% */
+      text-transform: capitalize;
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
+
+      color: #1a1a1a;
+
+      &:hover {
+        text-decoration-line: underline;
+      }
+
+      .date {
+        /* 06/16/2023 */
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* identical to box height, or 171% */
+        text-transform: capitalize;
+        font-feature-settings:
+          "pnum" on,
+          "lnum" on;
+        text-decoration-line: none;
+
+        color: #666666;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 16px;
+      }
+    }
   }
 }

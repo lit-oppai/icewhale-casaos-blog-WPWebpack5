@@ -178,34 +178,34 @@ const common = {
 
 // module.exports = [preloader, wpLogin, main]
 
-const index = merge(common, {
-  entry: './src/js/index.js',
-  output: {
-    path: path.resolve(__dirname, '../js'),
-    filename: 'index.min.js',
-    publicPath: '../'
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '../css/main.min.css'
-    }),
-    new RemoveFilesPlugin({
-      before: {
-        include: [
-          './css',
-          './img',
-          './js'
-        ]
-      },
-      after: {
-        root: './js',
-        include: [
-          'index.min.js'
-        ]
-      }
-    })
-  ]
-})
+// const index = merge(common, {
+//   entry: './src/js/article.js',
+//   output: {
+//     path: path.resolve(__dirname, '../js'),
+//     filename: 'article.min.js',
+//     publicPath: '../'
+//   },
+//   plugins: [
+//     new MiniCssExtractPlugin({
+//       filename: '../css/article.min.css'
+//     }),
+//     new RemoveFilesPlugin({
+//       before: {
+//         include: [
+//           './css',
+//           './img',
+//           './js'
+//         ]
+//       },
+//       after: {
+//         root: './js',
+//         include: [
+//           'article.min.js'
+//         ]
+//       }
+//     })
+//   ]
+// })
 
 // const wpLogin = merge(common, {
 //   entry: './src/js/wp-login.js',
@@ -235,4 +235,45 @@ const main = merge(common, {
   ]
 })
 
-module.exports = [index, main]
+const article = merge(common, {
+  entry: './src/js/article.js',
+  output: {
+    path: path.resolve(__dirname, '../js'),
+    filename: 'article.min.js',
+    publicPath: '../'
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '../css/article.min.css'
+    })
+  ]
+})
+
+const header = merge(common, {
+  entry: './src/js/header.js',
+  output: {
+    path: path.resolve(__dirname, '../js'),
+    filename: 'header.min.js',
+    publicPath: '../'
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '../css/header.min.css'
+    })
+  ]
+})
+
+const footer = merge(common, {
+  entry: './src/js/footer.js',
+  output: {
+    path: path.resolve(__dirname, '../js'),
+    filename: 'footer.min.js',
+    publicPath: '../'
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '../css/footer.min.css'
+    })
+  ]
+})
+module.exports = [article, main, header, footer]

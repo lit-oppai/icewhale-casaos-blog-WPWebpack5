@@ -14,14 +14,14 @@
   width: 100%;
   height: auto;
   margin-top: 3rem;
-  padding: 0 2rem;
+  // padding: 0 2rem;
   //display: grid;
   //section {
   //  display: grid;
   //}
 }
 
-@media (max-width: 376px) {
+@media (max-width: 481px) {
   .main {
     margin-top: 2rem;
     width: $mobile-content-width;
@@ -29,5 +29,3 @@
     padding: 0;
   }
 }
-
-  

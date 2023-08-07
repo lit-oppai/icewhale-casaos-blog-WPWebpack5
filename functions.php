@@ -38,10 +38,19 @@ $usersSetup = new UsersSetup;
 
 $translationSetup = new TranslationSetup;
 
-// function get_path($resource) {
-//     $resource_file = 'classes/' . $resource . '.php';
-//     if (file_exists($resource_file)) {
-//         require_once($resource_file); 
-//         return new $class();
-//     }
-// }
+
+
+
+
+function get_category_count($name)
+{
+  // 函数体
+  $categories = get_categories(array(
+    'type' => "post"
+  ));
+  foreach ($categories as $category) {
+    if ($category->slug == $name || $category->name == $name) {
+      return print_r($category->count);
+    }
+  }
+}

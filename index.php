@@ -31,7 +31,4 @@
 get_template_part( 'template-parts/index/blog' );
 
 ?>
-<footer>
-
-</footer>
 <?php get_footer(); ?>

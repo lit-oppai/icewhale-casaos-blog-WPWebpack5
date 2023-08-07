@@ -18,6 +18,8 @@ class MediaSetup
     if (is_ssl()) {
       $url = str_replace('http://', 'https://', $url);
       return $url;
+    } else {
+      return $url;
     }
   }
 }
