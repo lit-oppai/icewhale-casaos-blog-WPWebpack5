@@ -19,7 +19,7 @@ footer {
     background-position: center;
     background-size: cover;
 
-    a:hover{
+    a:hover {
         color: #f1b335 !important;
     }
 
@@ -213,7 +213,7 @@ footer {
                                         text-transform: none;
                                         overflow: visible;
                                         margin: 0;
-                                        &:hover{
+                                        &:hover {
                                             background-color: #850101 !important;
                                         }
                                     }
@@ -310,8 +310,11 @@ footer {
                             font-size: 16px;
                             text-rendering: auto;
                             -moz-osx-font-smoothing: grayscale;
+                            &:hover {
+                                color: #0f1221 !important;
+                            }
                         }
-                        &:hover{
+                        &:hover {
                             background-color: #fff;
                             color: #0f1221 !important;
                         }
