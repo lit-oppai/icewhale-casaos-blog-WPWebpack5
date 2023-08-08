@@ -48,9 +48,9 @@ class StyleAndScriptSetup
   }
 
   public function addFooterJS() {
-    wp_enqueue_script('footer', '//cdn.jsdelivr.net/npm/sweetalert2@11');
-    wp_enqueue_script('footer', get_stylesheet_directory_uri() . '/js/jquery.formchimp.js', false, '1.0.0', true);
-    wp_enqueue_script('footer', get_stylesheet_directory_uri() . '/js/footer.min.js', false, '1.0.0', true);
-    
+    // wp_enqueue_script('footer', '//cdn.jsdelivr.net/npm/sweetalert2@11');
+    // wp_enqueue_script('footer', 'https://www.zimaboard.com/js/jquery.formchimp.js');
+    // wp_enqueue_script('footer', get_stylesheet_directory_uri() . '/js/jquery.formchimp.js', false, '1.0.0', true);
+    // wp_enqueue_script('footer', get_stylesheet_directory_uri() . '/js/footer.min.js', false, '1.0.0', true);
   }
 }

@@ -61,24 +61,32 @@
                             <h4 class="widget-title">Recent Post</h4>
                             <div class="section-content">
                                 <div class="widget-post-bx">
-                                    <?php while ( $the_query->have_posts() ) : $the_query->the_post();  ?>  
+                                    <?php while ($the_query->have_posts()) : $the_query->the_post();  ?>
 
-                                    <div class="widget-post clearfix">
-                                        <div class="wt-post-media">
-                                        </div>
-                                        <div class="wt-post-info">
-                                            <div class="wt-post-meta">
-                                                <ul>
-                                                    <li class="post-author"><?php the_time( 'j F' ); ?></li>
-                                                </ul>
+                                        <div class="widget-post clearfix">
+                                            <div class="wt-post-media">
+                                                <?php if(has_post_thumbnail()) : ?>
+                                                <div class="wt-post-media wt-img-effect clear zoom-slow">
+                                                    <a href="<?php the_permalink(); ?>">
+                                                        <img src="<?php the_post_thumbnail_url('thumbnail'); ?>" 
+                                                        class="attachment-thumbnail size-thumbnail wp-post-image" alt="" loading="lazy" width="80" height="80"> 
+                                                    </a>
+                                                </div>
+                                                <?php endif ?>
                                             </div>
-                                            <div class="wt-post-header">
-                                                <a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a>
+                                            <div class="wt-post-info" style="<?php if(has_post_thumbnail()){echo 'min-height:80px';} ?>">
+                                                <div class="wt-post-meta">
+                                                    <ul>
+                                                        <li class="post-author"><?php the_time('j F'); ?></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="wt-post-header">
+                                                    <a href="<?php the_permalink(); ?>" class="post-title"><?php the_title(); ?></a>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
 
-                                    <?php endwhile; ?>  
+                                    <?php endwhile; ?>
 
                                     <!-- <div class="widget-post clearfix">
                                         <div class="wt-post-media">
@@ -144,7 +152,7 @@
                                         })
                                     },
                                     onMailChimpSuccess: function() {
-                                        $(".email").val("");
+                                        jQuery(".email").val("");
                                         resetButton();
                                         Swal.fire({
                                             icon: 'success',

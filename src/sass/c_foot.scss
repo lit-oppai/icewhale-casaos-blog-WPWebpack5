@@ -112,6 +112,28 @@ footer {
                             .wt-post-media {
                                 width: 70px;
                                 float: left;
+                                position: relative;
+                                overflow: hidden;
+                                display: block;
+                                clear: both;
+                                a {
+                                    color: #111111;
+                                    outline: 0 none;
+                                    text-decoration: none;
+                                    background-color: transparent;
+                                    img {
+                                        -webkit-transition: all 10s;
+                                        width: 80px;
+                                        height: 80px;
+                                        object-fit: cover;
+                                        display: block;
+                                        margin: 0;
+                                        -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+                                        max-width: 100%;
+                                        border-style: none;
+                                        border: 0;
+                                    }
+                                }
                             }
                             .wt-post-info {
                                 margin-left: 85px;
@@ -310,13 +332,16 @@ footer {
                             font-size: 16px;
                             text-rendering: auto;
                             -moz-osx-font-smoothing: grayscale;
-                            &:hover {
-                                color: #0f1221 !important;
-                            }
+                            // &:hover {
+                            //     color: #0f1221 !important;
+                            // }
                         }
                         &:hover {
                             background-color: #fff;
                             color: #0f1221 !important;
+                            &::before {
+                                color: #0f1221;
+                            }
                         }
                     }
                 }
