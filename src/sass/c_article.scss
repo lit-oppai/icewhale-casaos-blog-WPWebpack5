@@ -257,11 +257,16 @@ section {
   padding: 3rem !important;
   width: 48.5rem;
   background: #ffffff;
+  a{
+    color: #006cd9;
+  }
 
   // text.text
   h1,
   h2,
-  h3 {
+  h3,
+  h4,
+  h5 {
     display: block;
     // 标题内容常规间距 16px
     margin-bottom: 1rem;
@@ -276,7 +281,7 @@ section {
       list-style-type: disc;
       line-height: 26px;
       /* 链接色 */
-      color: #006cd9;
+      // color: #006cd9;
 
       /* Part 1. What is ZimaBoard and its features? */
       font-family: "Rajdhani";
@@ -299,9 +304,13 @@ section {
   p + h1,
   p + h2,
   p + h3,
+  p + h4,
+  p + h5,
   ul + h1,
   ul + h2,
   ul + h3,
+  ul + h4,
+  ul + h5,
   ul + p,
   p + ul {
     margin-top: 2.5rem;
@@ -312,7 +321,8 @@ section {
   h1 + h2 {
     margin-top: 2rem; // + h1 margin-bottom 1rem
   }
-  h2 + h3 {
+  h2 + h3,
+  h3 + h4 {
     margin-top: 1.5rem; // + h2 margin-bottom 1rem
   }
 
@@ -326,9 +336,14 @@ section {
     }
   }
 
+  .wp-block-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .article_content img {
     margin: 2rem 0;
-    width: 100%;
+    // width: 100%;
     height: auto;
   }
 

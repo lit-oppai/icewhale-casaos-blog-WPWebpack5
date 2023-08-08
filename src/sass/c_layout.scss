@@ -349,7 +349,7 @@ body {
 aside.right {
   // margin-left: auto;
   position: absolute;
-  right: 0;
+  right: calc(50vw - 400px - 22rem);;
   // top: 5.25rem;
   top: 32rem;
   width: 17.75rem;

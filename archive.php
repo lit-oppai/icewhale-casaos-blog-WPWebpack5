@@ -17,11 +17,17 @@ $cat_name = get_query_var('category_name');
 				<?php
 				$args = array(
 					'category_name' => $cat_name,
+					'posts_per_page' => -1,
 					'order' => 'DESC'
 				);
 				$category_posts = get_posts($args);
+				// print_r($category_posts);
+				// $i = 0;
 				foreach ($category_posts as $post) :
 					setup_postdata($post);
+					// print_r($post);
+					// $i = $i+1;
+					// print_r($i);
 					$permalink = get_permalink($post->ID);
 				?>
 

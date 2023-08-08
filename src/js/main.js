@@ -105,10 +105,11 @@ const swiper = new Swiper('.swiper', {
 // })
 
 function activateDirectory() {
-	if (screen.width < 1440) {
+	const contentId = getCurrentContentId()
+	if (screen.width < 1440 || !contentId) {
 		return
 	}
-	const contentId = getCurrentContentId()
+	
 	document.querySelector(`[data-content-id = "${contentId}"]`)?.classList.add('active')
 
 	// 根据 id 获取对应目录项
@@ -128,6 +129,9 @@ function activateDirectory() {
 function getCurrentContentId() {
 	// 获取当前可视区域的id
 	const contentList = document.querySelectorAll('[id^="content"]')
+	if(!contentList.length){
+		return null
+	}
 	const contentIdList = Array.from(contentList).map((content) => {
 		const contentId = content.getAttribute('id')
 		const contentTop = content.getBoundingClientRect().top
@@ -138,7 +142,7 @@ function getCurrentContentId() {
 	})
 	const contentId = contentIdList
 		.filter((content) => content.contentTop > 0)
-		.sort((a, b) => a.contentTop - b.contentTop)[0].contentId
+		.sort((a, b) => a.contentTop - b.contentTop)[0]?.contentId
 	return contentId
 }
 

@@ -1,4 +1,4 @@
-<footer class="site-footer footer-large footer-dark text-white default-footer footer-style1" style="display: block; height: 576.75px;">
+<footer class="site-footer footer-large footer-dark text-white default-footer footer-style1" style="display: block;">
     <!-- FOOTER BLOCKES START -->
     <div class="footer-top">
         <div class="container">
