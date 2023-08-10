@@ -6,15 +6,23 @@ $id = $args['id'];
 
 $args = array(
 	'category_name' => $part_slug,
-	'posts_per_page' => -1
+	'posts_per_page' => 2
 );
 $category_posts = get_posts($args);
+
+// Get the ID of a given category
+$category_id = get_cat_ID($part_name);
+
+// Get the URL of this category
+$category_link = get_category_link($category_id);
 ?>
 
 <section class="mb-12" id="<?php echo $id ?>">
 	<div class="flex justify-between headline mb-4 items-center">
 		<div class="title"><?php echo $part_name ?> <span class="badge">Total <?php get_category_count($part_slug); ?> articles</span></div>
-		<button class="operation">View All</button>
+		<a href="<?php echo esc_url($category_link); ?>">
+			<button class="operation">View All</button>
+		</a>
 	</div>
 	<div class="flex items-center justify-evenly is-grid-poster-wall feature-article">
 

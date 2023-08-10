@@ -1,15 +1,16 @@
 <?php
 
 get_header();
-
+$cat = get_query_var('cat');
 $cat_name = get_query_var('category_name');
+$yourcat  = get_category( $cat );
 
 ?>
 <div class="body">
 	<main class="main">
 		<section class="mb-12">
 			<div class="flex justify-between headline mb-4 items-center">
-				<div class="title"><?php echo $cat_name ?> </div>
+				<div class="title"><?php echo $yourcat->name; ?> </div>
 				<span class="badge">Total <?php get_category_count($cat_name); ?> articles</span>
 			</div>
 			<div class="is-grid-card">
@@ -21,13 +22,8 @@ $cat_name = get_query_var('category_name');
 					'order' => 'DESC'
 				);
 				$category_posts = get_posts($args);
-				// print_r($category_posts);
-				// $i = 0;
 				foreach ($category_posts as $post) :
 					setup_postdata($post);
-					// print_r($post);
-					// $i = $i+1;
-					// print_r($i);
 					$permalink = get_permalink($post->ID);
 				?>
 

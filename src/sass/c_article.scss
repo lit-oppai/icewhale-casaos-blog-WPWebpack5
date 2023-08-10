@@ -257,7 +257,7 @@ section {
   padding: 3rem !important;
   width: 48.5rem;
   background: #ffffff;
-  a{
+  a {
     color: #006cd9;
   }
 
@@ -280,19 +280,23 @@ section {
     li {
       list-style-type: disc;
       line-height: 26px;
-      /* 链接色 */
-      // color: #006cd9;
 
       /* Part 1. What is ZimaBoard and its features? */
-      font-family: "Rajdhani";
+      font-family: "Mulish";
       font-style: normal;
-      font-weight: 600;
-      font-size: 20px;
+      font-weight: 400;
+      font-size: 16px;
       line-height: 26px;
       /* identical to box height, or 130% */
       font-feature-settings:
         "pnum" on,
         "lnum" on;
+
+      strong {
+        font-family: "Rajdhani";
+        font-weight: 600;
+        font-size: 20px;
+      }
     }
 
     li:not(:last-child) {
@@ -336,7 +340,7 @@ section {
     }
   }
 
-  .wp-block-image{
+  .wp-block-image {
     display: flex;
     justify-content: center;
     align-items: center;
