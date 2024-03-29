@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="author" content="Marcin Szczepkowski">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- <script src="https://cdn.tailwindcss.com"></script> -->
 	<title><?php wp_title('|', true, 'right');
 			bloginfo('name'); ?></title>
 	<?php wp_head(); ?>
@@ -14,7 +14,7 @@
 </head>
 
 <body>
-<header class="text-sans fixed z-30 w-screen text-white transition-[top] duration-300 top-0">
+<header class="text-sans fixed z-30 w-screen text-white transition-[top] duration-300 top-0 text-base">
     <div class="fixed z-40 w-full bg-[#111111]/75 text-white/50 backdrop-blur">
       <div class="gpx mx-auto flex w-full max-w-screen-xl flex-row items-start justify-between">
         <div class="flex flex-row">

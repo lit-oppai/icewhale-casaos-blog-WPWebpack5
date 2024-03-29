@@ -1,8 +1,12 @@
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
 @import "fonts";
-@import "normalizer";
-@import "base";
+// @import "normalizer";
+// @import "base";
 // @import "header";
-@import "tailwindcss/base";
+// @import "tailwindcss/base";
 
 @import "c_header.scss";
 @import "c_layout.scss";

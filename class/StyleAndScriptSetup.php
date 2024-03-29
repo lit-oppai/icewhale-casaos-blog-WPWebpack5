@@ -44,7 +44,7 @@ class StyleAndScriptSetup
     wp_enqueue_script('jQuery', get_stylesheet_directory_uri() . '/js/jquery.min.js');
     wp_enqueue_script('main', get_stylesheet_directory_uri() . '/js/main.min.js', false, '1.0.0', true);
     // wp_enqueue_script('header', get_stylesheet_directory_uri() . '/js/header.min.js', false, '1.0.0', true);
-    wp_enqueue_script('article', get_stylesheet_directory_uri() . '/js/article.min.js', false, '1.0.0', true);
+    // wp_enqueue_script('article', get_stylesheet_directory_uri() . '/js/article.min.js', false, '1.0.0', true);
   }
 
   public function addFooterJS() {

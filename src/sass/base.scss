@@ -44,6 +44,15 @@ a:focus {
     color: $brandColor_1;
     text-decoration: underline;
 }
+header,footer {
+    a{
+        text-decoration: none;
+        &:hover{
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
 
 .fullpage_message {
     display: flex;

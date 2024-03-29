@@ -8,20 +8,20 @@ const RemoveFilesPlugin = require('remove-files-webpack-plugin')
 
 const common = {
   optimization: {
-    minimize: true,
+    minimize: false,
     minimizer: [
       // eslint-disable-next-line quotes
       `...`,
-      new CssMinimizerPlugin({
-        minimizerOptions: {
-          preset: [
-            'default',
-            {
-              discardComments: { removeAll: true }
-            }
-          ]
-        }
-      }),
+      // new CssMinimizerPlugin({
+      //   minimizerOptions: {
+      //     preset: [
+      //       'default',
+      //       {
+      //         discardComments: { removeAll: true }
+      //       }
+      //     ]
+      //   }
+      // }),
       new ImageMinimizerPlugin({
         minimizer: {
           implementation: ImageMinimizerPlugin.imageminMinify,
@@ -86,7 +86,10 @@ const common = {
             }
           },
           {
-            loader: 'postcss-loader'
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true
+            }
           },
           {
             loader: 'resolve-url-loader'
@@ -235,19 +238,19 @@ const main = merge(common, {
   ]
 })
 
-const article = merge(common, {
-  entry: './src/js/article.js',
-  output: {
-    path: path.resolve(__dirname, '../js'),
-    filename: 'article.min.js',
-    publicPath: '../'
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '../css/article.min.css'
-    })
-  ]
-})
+// const article = merge(common, {
+//   entry: './src/js/article.js',
+//   output: {
+//     path: path.resolve(__dirname, '../js'),
+//     filename: 'article.min.js',
+//     publicPath: '../'
+//   },
+//   plugins: [
+//     new MiniCssExtractPlugin({
+//       filename: '../css/article.min.css'
+//     })
+//   ]
+// })
 
 // const header = merge(common, {
 //   entry: './src/js/header.js',
@@ -276,4 +279,4 @@ const article = merge(common, {
 //     })
 //   ]
 // })
-module.exports = [article, main, /* header, footer */]
+module.exports = [/* article, */ main, /* header, footer */]

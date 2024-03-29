@@ -67,11 +67,11 @@
       </div>
     </div>
     <ul
-      class="max-w-screen-xl w-full mx-auto flex flex-col justify-between gap-8 pt-8 text-white/50 md:flex-row md:gap-6 xl:pt-0">
+      class="max-w-screen-xl w-full mx-auto flex flex-col justify-between gap-8 pt-8 text-base text-white/50 md:flex-row md:gap-6 xl:pt-0">
       <!--[-->
       <li class="flex w-full flex-col md:w-[200px]">
         <div class="flex cursor-pointer flex-row justify-between md:cursor-auto">
-          <p class="pb-5 text-white md:last:hidden">Products</p>
+          <p class="pb-5 text- text-white md:last:hidden">Products</p>
           <div class="md:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
               role="img" class="icon text-xl text-white" style="" width="1em" height="1em" viewBox="0 0 24 24"

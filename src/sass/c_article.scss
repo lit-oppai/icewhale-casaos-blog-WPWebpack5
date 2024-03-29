@@ -376,100 +376,102 @@ section {
 }
 
 @media (min-width: 482px) {
-  .reviews {
-    /* Reviews */
-    font-family: "Rajdhani SemiBold";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 24px;
-    /* identical to box height, or 133% */
-    text-transform: capitalize;
-    font-feature-settings:
-      "pnum" on,
-      "lnum" on;
+  .article {
+    .reviews {
+      /* Reviews */
+      font-family: "Rajdhani SemiBold";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 24px;
+      /* identical to box height, or 133% */
+      text-transform: capitalize;
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
 
-    color: #1a1a1a;
-  }
+      color: #1a1a1a;
+    }
 
-  // title.title {
-  div.title,
-  h1 {
-    margin: 1rem 0;
-    /* ZimaBoard – Kodi Media Server: Stream Your Favorite Content Hassle-Free */
-    font-family: "Rajdhani";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    /* or 120% */
-    font-feature-settings:
-      "pnum" on,
-      "lnum" on;
+    // title.title {
+    div.title,
+    h1 {
+      margin: 1rem 0;
+      /* ZimaBoard – Kodi Media Server: Stream Your Favorite Content Hassle-Free */
+      font-family: "Rajdhani";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      /* or 120% */
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
 
-    color: #1a1a1a;
-  }
+      color: #1a1a1a;
+    }
 
-  h2 {
-    /* Part 1. What is ZimaBoard and its features? */
-    font-family: "Rajdhani";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
-    /* identical to box height, or 125% */
-    font-feature-settings:
-      "pnum" on,
-      "lnum" on;
+    h2 {
+      /* Part 1. What is ZimaBoard and its features? */
+      font-family: "Rajdhani";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      /* identical to box height, or 125% */
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
 
-    color: #1a1a1a;
-  }
+      color: #1a1a1a;
+    }
 
-  h3 {
-    /* 2. Configuring ZimaBoard for optimal streaming experience */
-    font-family: "Rajdhani";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 32px;
-    /* or 114% */
-    font-feature-settings:
-      "pnum" on,
-      "lnum" on;
+    h3 {
+      /* 2. Configuring ZimaBoard for optimal streaming experience */
+      font-family: "Rajdhani";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 32px;
+      /* or 114% */
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
 
-    color: #1a1a1a;
-  }
+      color: #1a1a1a;
+    }
 
-  h4 {
-    /* Network settings and connectivity */
-    font-family: "Rajdhani";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    /* identical to box height, or 125% */
-    font-feature-settings:
-      "pnum" on,
-      "lnum" on;
+    h4 {
+      /* Network settings and connectivity */
+      font-family: "Rajdhani";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      /* identical to box height, or 125% */
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
 
-    color: #1a1a1a;
-  }
-  // }
+      color: #1a1a1a;
+    }
+    // }
 
-  // .text
-  p {
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    /* or 162% */
-    text-transform: capitalize;
-    font-feature-settings:
-      "pnum" on,
-      "lnum" on;
+    // .text
+    p {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      /* or 162% */
+      text-transform: capitalize;
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
 
-    color: #1a1a1a;
+      color: #1a1a1a;
+    }
   }
 }
 
@@ -477,101 +479,101 @@ section {
   .article {
     padding: 2rem 1.5rem 4rem;
     margin-top: 15rem;
-  }
 
-  .reviews {
-    /* Reviews */
-    font-family: "Rajdhani SemiBold";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 18px;
-    /* identical to box height, or 129% */
-    text-transform: capitalize;
-    font-feature-settings:
-      "pnum" on,
-      "lnum" on;
+    .reviews {
+      /* Reviews */
+      font-family: "Rajdhani SemiBold";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 18px;
+      /* identical to box height, or 129% */
+      text-transform: capitalize;
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
 
-    color: #1a1a1a;
-  }
+      color: #1a1a1a;
+    }
 
-  // title.title {
-  div.title,
-  h1 {
-    /* ZimaBoard – Kodi Media Server: Stream Your Favorite Content Hassle-Free */
-    font-family: "Rajdhani";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
-    /* or 125% */
-    font-feature-settings:
-      "pnum" on,
-      "lnum" on;
+    // title.title {
+    div.title,
+    h1 {
+      /* ZimaBoard – Kodi Media Server: Stream Your Favorite Content Hassle-Free */
+      font-family: "Rajdhani";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 40px;
+      /* or 125% */
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
 
-    color: #1a1a1a;
-  }
+      color: #1a1a1a;
+    }
 
-  h2 {
-    /* Part 1. What is ZimaBoard and its features? */
-    font-family: "Rajdhani";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 32px;
-    /* or 114% */
-    font-feature-settings:
-      "pnum" on,
-      "lnum" on;
+    h2 {
+      /* Part 1. What is ZimaBoard and its features? */
+      font-family: "Rajdhani";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 32px;
+      /* or 114% */
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
 
-    color: #1a1a1a;
-  }
+      color: #1a1a1a;
+    }
 
-  h3 {
-    /* 1. Installing ZimaBoard operating system for seamless performance */
-    font-family: "Rajdhani";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    /* or 125% */
-    font-feature-settings:
-      "pnum" on,
-      "lnum" on;
+    h3 {
+      /* 1. Installing ZimaBoard operating system for seamless performance */
+      font-family: "Rajdhani";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      /* or 125% */
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
 
-    color: #1a1a1a;
-  }
+      color: #1a1a1a;
+    }
 
-  h4 {
-    /* Final Verdict: */
-    font-family: "Rajdhani";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    /* identical to box height, or 125% */
-    font-feature-settings:
-      "pnum" on,
-      "lnum" on;
+    h4 {
+      /* Final Verdict: */
+      font-family: "Rajdhani";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+      /* identical to box height, or 125% */
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
 
-    color: #1a1a1a;
-  }
-  // }
+      color: #1a1a1a;
+    }
+    // }
 
-  // .text {
-  p {
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
-    /* or 162% */
-    text-transform: capitalize;
-    font-feature-settings:
-      "pnum" on,
-      "lnum" on;
+    // .text {
+    p {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      /* or 162% */
+      text-transform: capitalize;
+      font-feature-settings:
+        "pnum" on,
+        "lnum" on;
 
-    color: #1a1a1a;
+      color: #1a1a1a;
+    }
   }
 }
 
