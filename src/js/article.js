@@ -49,7 +49,7 @@
 // body.appendChild(footerElement)
 
 //init header
-if (screen.width <= 375) {
+/* if (screen.width <= 375) {
   const headerNav = document.querySelector('#header-nav')
   headerNav.classList.add('close')
   // add event listener
@@ -69,19 +69,19 @@ if (screen.width <= 375) {
 } else {
   const headerNav = document.querySelector('#header-extra')
   headerNav.classList.add('close')
-}
+} */
 
 // init search
-document.querySelector('.searchIcon').addEventListener('click', (e) => {
+/* document.querySelector('.searchIcon').addEventListener('click', (e) => {
   const ICON = document.querySelector('.searchIcon')
   const INPUT = document.querySelector('.searchInput')
   ICON.classList.add('close')
   INPUT.classList.remove('close')
   INPUT.focus()
-})
+}) */
 
 // global click event
-document.addEventListener('click', (e) => {
+/* document.addEventListener('click', (e) => {
   // close search
   const ICON = document.querySelector('.searchIcon')
   const INPUT = document.querySelector('.searchInput')
@@ -89,4 +89,4 @@ document.addEventListener('click', (e) => {
     ICON.classList.remove('close')
     INPUT.classList.add('close')
   }
-})
+}) */

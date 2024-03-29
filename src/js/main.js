@@ -109,7 +109,7 @@ function activateDirectory() {
 	if (screen.width < 1440 || !contentId) {
 		return
 	}
-	
+
 	document.querySelector(`[data-content-id = "${contentId}"]`)?.classList.add('active')
 
 	// 根据 id 获取对应目录项
@@ -129,7 +129,7 @@ function activateDirectory() {
 function getCurrentContentId() {
 	// 获取当前可视区域的id
 	const contentList = document.querySelectorAll('[id^="content"]')
-	if(!contentList.length){
+	if (!contentList.length) {
 		return null
 	}
 	const contentIdList = Array.from(contentList).map((content) => {
@@ -142,7 +142,7 @@ function getCurrentContentId() {
 	})
 	const contentId = contentIdList
 		.filter((content) => content.contentTop > 0)
-		.sort((a, b) => a.contentTop - b.contentTop)[0]?.contentId
+		.sort((a, b) => a.contentTop - b.contentTop)[0]?.contentId || 'content6'
 	return contentId
 }
 
@@ -204,5 +204,26 @@ document.querySelectorAll('.content-ref').forEach((item) => {
 //     INPUT.classList.add('close')
 //   }
 // })
-
-
+console.log('main.js');
+for (let i = 1; i < 5; i++) {
+	console.log(`.foo-${i}-state`, `.foo-${i}`);
+	addPointerenterEventToNavMenu(`.foo-${i}-state`, `.foo-${i}`)
+}
+function addPointerenterEventToNavMenu(stateSeletor, menuSelector) {
+	const FOO = document.querySelector(stateSeletor)
+	FOO.addEventListener('pointerenter', (e) => {
+		cancelNavNenu();
+		document.querySelector(menuSelector).classList.remove('hidden')
+	})
+}
+const CANCEL_NAV_TRRIGER = document.querySelector('.cancel-nav-trigger')
+CANCEL_NAV_TRRIGER.addEventListener('pointerleave', (e) => {
+	CANCEL_NAV_TRRIGER.querySelectorAll('div').forEach((item) => {
+		item.classList.add('hidden')
+	})
+})
+function cancelNavNenu() {
+	document.querySelectorAll('.cancel-nav-trigger div').forEach((item) => {
+		item.classList.add('hidden')
+	})
+}

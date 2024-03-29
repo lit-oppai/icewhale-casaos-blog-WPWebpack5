@@ -1,6 +1,6 @@
 <?php
 
-get_template_part('template-parts/index/header');
+get_header();
 $cat = get_query_var('cat');
 $cat_name = get_query_var('category_name');
 $yourcat  = get_category( $cat );
@@ -69,4 +69,4 @@ $yourcat  = get_category( $cat );
 		</section>
 	</main>
 </div>
-<?php get_template_part('template-parts/index/footer'); ?>
+<?php get_footer(); ?>
