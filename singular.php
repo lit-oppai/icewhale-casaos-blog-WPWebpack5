@@ -10,7 +10,7 @@
  * @since Twenty Twenty 1.0
  */
 
-get_header();
+ get_template_part( 'template-parts/index/header' );
 ?>
 
 <div class="layout-container">
@@ -137,4 +137,4 @@ get_header();
 <?php get_template_part('template-parts/footer-menus-widgets'); ?>
 
 <?php
-get_footer();
+get_template_part('template-parts/index/footer');

@@ -249,31 +249,31 @@ const article = merge(common, {
   ]
 })
 
-const header = merge(common, {
-  entry: './src/js/header.js',
-  output: {
-    path: path.resolve(__dirname, '../js'),
-    filename: 'header.min.js',
-    publicPath: '../'
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '../css/header.min.css'
-    })
-  ]
-})
+// const header = merge(common, {
+//   entry: './src/js/header.js',
+//   output: {
+//     path: path.resolve(__dirname, '../js'),
+//     filename: 'header.min.js',
+//     publicPath: '../'
+//   },
+//   plugins: [
+//     new MiniCssExtractPlugin({
+//       filename: '../css/header.min.css'
+//     })
+//   ]
+// })
 
-const footer = merge(common, {
-  entry: './src/js/footer.js',
-  output: {
-    path: path.resolve(__dirname, '../js'),
-    filename: 'footer.min.js',
-    publicPath: '../'
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '../css/footer.min.css'
-    })
-  ]
-})
-module.exports = [article, main, header, footer]
+// const footer = merge(common, {
+//   entry: './src/js/footer.js',
+//   output: {
+//     path: path.resolve(__dirname, '../js'),
+//     filename: 'footer.min.js',
+//     publicPath: '../'
+//   },
+//   plugins: [
+//     new MiniCssExtractPlugin({
+//       filename: '../css/footer.min.css'
+//     })
+//   ]
+// })
+module.exports = [article, main, /* header, footer */]
