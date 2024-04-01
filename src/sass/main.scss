@@ -33,3 +33,17 @@
     padding: 0;
   }
 }
+
+body{
+  position: relative;
+}
+.gpx {
+  padding-left: 6.25vw;
+  padding-right: 6.25vw
+}
+@media (min-width: 640px) {
+  .gpx {
+    padding-left:2.5rem;
+    padding-right: 2.5rem
+  }
+}

@@ -17,20 +17,20 @@
 <header class="text-sans fixed z-30 w-screen text-white transition-[top] duration-300 top-0 text-base">
     <div class="fixed z-40 w-full bg-[#111111]/75 text-white/50 backdrop-blur">
       <div class="gpx mx-auto flex w-full max-w-screen-xl flex-row items-start justify-between">
-        <div class="flex flex-row">
+        <div class="flex flex-row" id="zima_trigger">
           <div class="flex h-[4rem] items-center text-white"><a href="/">Zima</a></div>
-          <ul class="flex flex-row">
+          <ul class="flex flex-row" id="zima_nav">
             <li
               class="flex flex-col transition-all duration-700 md:visible md:h-[4rem] md:flex-row md:items-center md:opacity-100 md:transition-none h-0 opacity-0">
               <!--[-->
               <span
-                class="group foo-1-state block cursor-pointer pt-8 transition-all duration-300 md:pl-8 md:pt-0 hover:text-white  opacity-0 md:block md:opacity-100">Products</span>
+                class="foo-1-state  cursor-pointer pt-8 transition-all duration-300 md:pl-8 md:pt-0 hover:text-white hidden opacity-0 md:block md:opacity-100">Products</span>
               <span
-                class="foo-2-state block cursor-pointer pt-8 transition-all duration-300 md:pl-8 md:pt-0 hover:text-white  opacity-0 md:block md:opacity-100">Resource</span>
+                class="foo-2-state  cursor-pointer pt-8 transition-all duration-300 md:pl-8 md:pt-0 hover:text-white hidden opacity-0 md:block md:opacity-100">Resource</span>
               <span
-                class="foo-3-state block cursor-pointer pt-8 transition-all duration-300 md:pl-8 md:pt-0 hover:text-white  opacity-0 md:block md:opacity-100">Support</span>
+                class="foo-3-state  cursor-pointer pt-8 transition-all duration-300 md:pl-8 md:pt-0 hover:text-white hidden opacity-0 md:block md:opacity-100">Support</span>
               <span
-                class="foo-4-state block cursor-pointer pt-8 transition-all duration-300 md:pl-8 md:pt-0 hover:text-white  opacity-0 md:block md:opacity-100">Explore</span>
+                class="foo-4-state  cursor-pointer pt-8 transition-all duration-300 md:pl-8 md:pt-0 hover:text-white hidden opacity-0 md:block md:opacity-100">Explore</span>
             </li>
           </ul>
         </div>
@@ -43,10 +43,11 @@
             </a>
           </li>
           <li class="md:hidden">
-            <button class="flex items-center">
+            <button class="flex items-center" id="nav_panel_switch">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
                 role="img" class="icon" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-8f29132a="">
-                <path fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"></path>
+                <path id="nav_panel_switch_off" fill="currentColor" d="M3 18v-2h18v2zm0-5v-2h18v2zm0-5V6h18v2z"></path>
+                <path id="nav_panel_switch_on" class="hidden" fill="currentColor" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"></path>
               </svg>
             </button>
           </li>
@@ -55,10 +56,10 @@
     </div>
     <div
       class="fixed top-0 z-50 w-full transition-[opacity] duration-300 md:z-30 bg-[#111111] text-white backdrop-blur-lg md:bg-[#111111]/25 p-0">
-      <div class="cancel-nav-trigger bg-[#111111]/10 md:bg-[#111111]/70 md:transition-all md:duration-500 pt-0">
+      <div class="cancel-nav-trigger bg-[#111111]/10 md:bg-[#111111]/70 md:transition-all md:duration-500 md:pt-0">
 
         <div
-          class="foo-1 gpx mx-auto max-w-screen-xl animate-fade-right pb-10 pt-6 animate-duration-300 md:animate-fade hidden">
+          class="foo-1 gpx mx-auto max-w-screen-xl animate-fade-right pb-10 pt-6 animate-duration-300 md:animate-fade hidden mt-16 md:mt-0">
           <button class="pb-8 text-2xl text-white">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
               role="img" class="icon -ml-1" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-8f29132a="">
@@ -89,7 +90,7 @@
         </div>
 
         <div
-          class="foo-2 gpx mx-auto max-w-screen-xl animate-fade-right pb-10 pt-6 animate-duration-300 md:animate-fade hidden">
+          class="foo-2 gpx mx-auto max-w-screen-xl animate-fade-right pb-10 pt-6 animate-duration-300 md:animate-fade hidden mt-16 md:mt-0">
           <button class="pb-8 text-2xl text-white">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
               role="img" class="icon -ml-1" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-8f29132a="">
@@ -124,7 +125,7 @@
         </div>
 
         <div
-          class="foo-3 gpx mx-auto max-w-screen-xl animate-fade-right pb-10 pt-6 animate-duration-300 md:animate-fade hidden">
+          class="foo-3 gpx mx-auto max-w-screen-xl animate-fade-right pb-10 pt-6 animate-duration-300 md:animate-fade hidden mt-16 md:mt-0">
           <button class="pb-8 text-2xl text-white">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
               role="img" class="icon -ml-1" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-8f29132a="">
@@ -162,7 +163,7 @@
         </div>
 
         <div
-          class="foo-4 gpx mx-auto max-w-screen-xl animate-fade-right pb-10 pt-6 animate-duration-300 md:animate-fade hidden">
+          class="foo-4 gpx mx-auto max-w-screen-xl animate-fade-right pb-10 pt-6 animate-duration-300 md:animate-fade hidden mt-16 md:mt-0">
           <button class="pb-8 text-2xl text-white">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
               role="img" class="icon -ml-1" style="" width="1em" height="1em" viewBox="0 0 24 24" data-v-8f29132a="">

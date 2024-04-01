@@ -204,7 +204,7 @@ document.querySelectorAll('.content-ref').forEach((item) => {
 //     INPUT.classList.add('close')
 //   }
 // })
-console.log('main.js');
+
 for (let i = 1; i < 5; i++) {
 	console.log(`.foo-${i}-state`, `.foo-${i}`);
 	addPointerenterEventToNavMenu(`.foo-${i}-state`, `.foo-${i}`)
@@ -227,3 +227,50 @@ function cancelNavNenu() {
 		item.classList.add('hidden')
 	})
 }
+
+// 关闭状态
+let isNavPanelSwitchOn = false
+function switchNavPanel() {
+
+	if (isNavPanelSwitchOn) {
+		// 打开状态
+		isNavPanelSwitchOn = false
+		document.querySelector('#nav_panel_switch_on').classList.add('hidden')
+		document.querySelector('#nav_panel_switch_off').classList.remove('hidden')
+
+		document.querySelector('#zima_trigger').classList.add('flex-row')
+		document.querySelector('#zima_trigger').classList.remove('flex-col', 'md:flex-row')
+
+		document.querySelector("#zima_nav").classList.add('h-0', 'opacity-0')
+		document.querySelector("#zima_nav").classList.remove('h-[100vh]', 'opacity-100')
+
+		document.querySelector("#zima_nav>li").classList.add('h-0', 'opacity-0')
+		document.querySelector("#zima_nav>li").classList.remove('h-dvh', 'opacity-100')
+
+		document.querySelectorAll("#zima_nav>li>span").forEach((item) => {
+			item.classList.add('opacity-0', 'hidden')
+			item.classList.remove('opacity-100', 'block')
+		})
+	} else {
+		// 关闭状态
+		isNavPanelSwitchOn = true
+		document.querySelector('#nav_panel_switch_on').classList.remove('hidden')
+		document.querySelector('#nav_panel_switch_off').classList.add('hidden')
+
+		document.querySelector('#zima_trigger').classList.remove('flex-row')
+		document.querySelector('#zima_trigger').classList.add('flex-col', 'md:flex-row')
+
+		document.querySelector("#zima_nav").classList.remove('h-0', 'opacity-0')
+		document.querySelector("#zima_nav").classList.add('h-[100vh]', 'opacity-100')
+
+		document.querySelector("#zima_nav>li").classList.remove('h-0', 'opacity-0')
+		document.querySelector("#zima_nav>li").classList.add('h-dvh', 'opacity-100')
+
+		document.querySelectorAll("#zima_nav>li>span").forEach((item) => {
+			item.classList.remove('opacity-0', 'hidden')
+			item.classList.add('opacity-100', 'block')
+		})
+	}
+}
+
+document.querySelector("#nav_panel_switch").addEventListener('click', switchNavPanel)
