@@ -18,7 +18,7 @@
     <div class="fixed z-40 w-full bg-[#111111]/75 text-white/50 backdrop-blur">
       <div class="gpx mx-auto flex w-full max-w-screen-xl flex-row items-start justify-between">
         <div class="flex flex-row" id="zima_trigger">
-          <div class="flex h-[4rem] items-center text-white"><a href="/">Zima</a></div>
+          <div class="flex h-[4rem] items-center text-white"><a href="https://www.zimaspace.com/">Zima</a></div>
           <ul class="flex flex-row" id="zima_nav">
             <li
               class="flex flex-col transition-all duration-700 md:visible md:h-[4rem] md:flex-row md:items-center md:opacity-100 md:transition-none h-0 opacity-0">
@@ -70,13 +70,13 @@
           <ul class="flex flex-col gap-4">
             <!--[-->
             <li class="transition-transform duration-300 hover:translate-x-1">
-              <a href="/products/cube-personal-cloud?utm_source=head&amp;utm_medium=menu" class="">ZimaCube</a>
+              <a href="https://www.zimaspace.com/products/cube-personal-cloud?utm_source=head&amp;utm_medium=menu" class="">ZimaCube</a>
             </li>
             <li class="transition-transform duration-300 hover:translate-x-1">
-              <a href="/products/single-board-server?utm_source=head&amp;utm_medium=menu" class="">ZimaBoard</a>
+              <a href="https://www.zimaspace.com/products/single-board-server?utm_source=head&amp;utm_medium=menu" class="">ZimaBoard</a>
             </li>
             <li class="transition-transform duration-300 hover:translate-x-1">
-              <a href="/products/blade-personal-nas?utm_source=head&amp;utm_medium=menu" class="">ZimaBlade</a>
+              <a href="https://www.zimaspace.com/products/blade-personal-nas?utm_source=head&amp;utm_medium=menu" class="">ZimaBlade</a>
             </li>
             <li class="transition-transform duration-300 hover:translate-x-1">
               <a href="https://shop.zimaboard.com/collections/zima-accessories?utm_source=head&amp;utm_medium=menu"
@@ -144,19 +144,19 @@
                 rel="noopener noreferrer">Community</a>
             </li>
             <li class="transition-transform duration-300 hover:translate-x-1">
-              <a href="/support/contact?utm_source=head&amp;utm_medium=menu" class="">Contact</a>
+              <a href="https://www.zimaspace.com/support/contact?utm_source=head&amp;utm_medium=menu" class="">Contact</a>
             </li>
             <li class="transition-transform duration-300 hover:translate-x-1">
-              <a href="/support/refund-policy?utm_source=head&amp;utm_medium=menu" class="">Refund Policy</a>
+              <a href="https://www.zimaspace.com/support/refund-policy?utm_source=head&amp;utm_medium=menu" class="">Refund Policy</a>
             </li>
             <li class="transition-transform duration-300 hover:translate-x-1">
-              <a href="/support/privacy-policy?utm_source=head&amp;utm_medium=menu" class="">Privacy Policy</a>
+              <a href="https://www.zimaspace.com/support/privacy-policy?utm_source=head&amp;utm_medium=menu" class="">Privacy Policy</a>
             </li>
             <li class="transition-transform duration-300 hover:translate-x-1">
-              <a href="/support/terms-of-service?utm_source=head&amp;utm_medium=menu" class="">Terms of Service</a>
+              <a href="https://www.zimaspace.com/support/terms-of-service?utm_source=head&amp;utm_medium=menu" class="">Terms of Service</a>
             </li>
             <li class="transition-transform duration-300 hover:translate-x-1">
-              <a href="/support/shipping-policy?utm_source=head&amp;utm_medium=menu" class="">Shipping Policy</a>
+              <a href="https://www.zimaspace.com/support/shipping-policy?utm_source=head&amp;utm_medium=menu" class="">Shipping Policy</a>
             </li>
             <!--]-->
           </ul>
@@ -182,17 +182,17 @@
                 rel="noopener noreferrer">Community</a>
             </li>
             <li class="transition-transform duration-300 hover:translate-x-1">
-              <a href="/about?utm_source=head&amp;utm_medium=menu" class="">About Us</a>
+              <a href="https://www.zimaspace.com/about?utm_source=head&amp;utm_medium=menu" class="">About Us</a>
             </li>
             <li class="transition-transform duration-300 hover:translate-x-1">
               <a href="https://www.zimaboard.com/blog/?utm_source=head&amp;utm_medium=menu"
                 rel="noopener noreferrer">Blog</a>
             </li>
             <li class="transition-transform duration-300 hover:translate-x-1">
-              <a href="/distributors?utm_source=head&amp;utm_medium=menu" class="">Distributors</a>
+              <a href="https://www.zimaspace.com/distributors?utm_source=head&amp;utm_medium=menu" class="">Distributors</a>
             </li>
             <li class="transition-transform duration-300 hover:translate-x-1">
-              <a href="/affiliate?utm_source=head&amp;utm_medium=menu" class="">Affiliate</a>
+              <a href="https://www.zimaspace.com/affiliate?utm_source=head&amp;utm_medium=menu" class="">Affiliate</a>
             </li>
             <!--]-->
           </ul>
